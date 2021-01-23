@@ -3,7 +3,7 @@
   background-color: lightgray;
   margin: 0;
   padding: 0;
-
+  
 }
 
 .navbar-brand {
@@ -16,11 +16,22 @@
   font-weight: 500;
   align-content: space-around;
 }
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+@media(min-width:768px) {
 .nav-link:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.1);
+  text-decoration: underline;
+  }
 }
+
+
+
 
 .dropdown {
   position: relative;
@@ -101,15 +112,22 @@ h4 {
 @media(max-width:768px){
   #totoHeslo {
     top:0%;
-    font-size: 1.3rem;
+    
   }
 }
 
-@media(max-width:534px){
+@media(max-width:634px){
   #totoHeslo {
     top:0%;
     font-size: 1.3rem;
     position: relative;
+  }
+}
+
+@media(min-width:1568px){
+  #totoHeslo {
+    font-size: 1.5rem;
+    
   }
 }
 
