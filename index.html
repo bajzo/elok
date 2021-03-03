@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="elok.css">
   <title>ELOK</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand "> 
+      <a href="index.html" class="navbar-brand"> 
         <img src=".\obrazky\logo.png" width="190px" alt="">
         </a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,11 +20,11 @@
        </button>
        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
         <ul class="navbar-nav">
-          <li class="nav-item px-2">
+          <li class="nav-item">
             <a href="index.html" class="nav-link">O NÁS</a>
           </li>
-          <li class="nav-item dropdown px-2">
-            <a href="produkty.html" class="nav-link dropdown-toggle id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a href="produkty.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               PRODUKTY
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -35,10 +36,10 @@
               <li><a class="dropdown-item" href="produkty.html#parSie">Sieťky, parapety...</a></li>
             </ul>
           </li>
-          <li class="nav-item px-2">
+          <li class="nav-item">
             <a href="referencie.html" class="nav-link">REFERENCIE</a>
           </li>
-          <li class="nav-item px-2">
+          <li class="nav-item">
             <a href="kontakt.html" class="nav-link">KONTAKT</a>
           </li>
         </ul>
@@ -46,128 +47,126 @@
     </div>
   </nav>
 
-  <section class="container-fluid px-0 bg-light">
-    <div class="row">
-      <img src=".\obrazky\fasady1.jpg" id="mainPic" alt="" >
-      <div class="col-lg-6" id="totoHeslo">
-        <h2>PRECÍZNE RIEŠENIE OKIEN, DVERÍ A INTERIÉROVÝCH ŽALÚZIÍ</h2>
-      <p class="text"> Sme slovenský dodávateľ plastových, hliníkových okien a dverí. Či staviate moderný dom alebo meníte okna v panelovom dome, vieme namontovať okná a dvere do každej budovy. Na trhu s oknami pôsobíme nepretržite od roku 1997.</p>
-      </div>
+  <section class="bckgrnd">
+   <div>
+        <h1 class="text" id="frontHead">PRECÍZNE RIEŠENIE OKIEN, DVERÍ A INTERIÉROVÝCH ŽALÚZIÍ</h1>
+      <h3 class="text" id="frontText"> Sme slovenský dodávateľ plastových, hliníkových okien a dverí. Či staviate moderný dom alebo meníte okna v panelovom dome, vieme namontovať okná a dvere do každej budovy. Na trhu s oknami pôsobíme nepretržite od roku 1997.</h3>
     </div>
-  </section>
+    </section>
 
-  <section>
-    <h1 class="py-5 m-0">O nás</h1>
+  <section class="py-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-5">
-          <img class="img-fluid  border border-dark d-none d-lg-inline-block" src=".\obrazky\dom.jpg" alt="">
+        <div class="col-lg-6">
+          <img class="img-fluid d-none d-lg-inline-block" src=".\obrazky\dom.jpg" alt="">
         </div>
-        <div class="col-lg-7">
-          <p class="display p-2 text-center">Firma ELOK Vám zaistí komplexné služby od demontáže starých okien až po odbornú inštaláciu nových. Súčasťou je samozrejme aj montáž doplnkov ako sú žalúzie, parapety, sieťky proti hmyzu a podobne. Nadobudnutím mnohoročných skúseností a kvalitnými dodávateľmi môžeme našim zákazníkom ponúknuť prémiovú kvalitu služieb, ktorú pocítite každý deň. Neoddeliteľnou súčasťou našej práce je aj pozáručná údržba a servis už namontovaných okien a dverí.</p>
+        <div class="col-lg-6">
+          <h1><span>O nás</span></h1>
+          <p class="display">Firma ELOK Vám zaistí komplexné služby od demontáže starých okien až po odbornú inštaláciu nových. Súčasťou je samozrejme aj montáž doplnkov ako sú žalúzie, parapety, sieťky proti hmyzu a podobne. Nadobudnutím mnohoročných skúseností a kvalitnými dodávateľmi môžeme našim zákazníkom ponúknuť prémiovú kvalitu služieb, ktorú pocítite každý deň. Neoddeliteľnou súčasťou našej práce je aj pozáručná údržba a servis už namontovaných okien a dverí.</p>
         </div>
       </div>
     </div>
   </section>
   
-  <section class="container-fluid bg-light px-0">
-    <h1 class="text-center py-5 m-0">Naše služby</h1>
+  <section class="container-fluid" id="offerCont">
+    <h1 class="text-center"><span>Naše služby</span></h1>
 
-    <div class="row align-items-center g-0">
-      <div class="col-md-4" id="offerPanel">
-        <div class="container">
-          <img class="img-fluid" id="offerPic" src=".\obrazky\poradenstvo.jpg" alt="">
-            <div class="over_lay" >
-              <h3 class="img_title">PORADENSTVO</h3>
-              <h5 class="img_title">Dvojsklo, či trojsklo? Akú zvoliť povrchovú úpravu? Pomôžeme Vám zorientovať sa v ponuke, aby sme pre Vás vybrali najvhodnejšie riešenie.</h5>
-            </div>
+    <div class="row row-cols-1 row-cols-lg-3 " id="offerPanel">
+      <div class="col">
+        <div class="card mx-2">
+          <img src=".\obrazky\bporadenstvo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">PORADENSTVO</h5>
+            <p class="card-text">Dvojsklo, či trojsklo? Akú zvoliť povrchovú úpravu? Pomôžeme Vám zorientovať sa v ponuke, aby sme pre Vás vybrali najvhodnejšie riešenie.</p>
+          </div>
         </div>
       </div>
-      
-      <div class="col-md-4" id="offerPanel">
-        <div class="container">
-          <img class="img-fluid" id="offerPic" src=".\obrazky\zameranie.jpg" alt="">
-            <div class="over_lay" >
-              <h3 class="img_title">ZAMERANIE</h3>
-              <h5 class="img_title">Pred samotnou realizáciou zákazky je jeden z najdôležitejších krokov odborné zameranie stavebných otvorov. Tie vykonávajú vyškolení technici, ktorí výrobky aj následne montujú.</h5>
-            </div>
+      <div class="col">
+        <div class="card mx-2">
+          <img src=".\obrazky\bzameranie.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">ZAMERANIE</h5>
+            <p class="card-text">Pred samotnou realizáciou zákazky je jeden z najdôležitejších krokov odborné zameranie stavebných otvorov. Tie vykonávajú vyškolení technici, ktorí výrobky aj následne montujú.</p>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-4" id="offerPanel">
-        <div class="container">
-          <img class="img-fluid" id="offerPic" src=".\obrazky\montaz.jpg" alt="">
-            <div class="over_lay" >
-              <h3 class="img_title">MONTÁŽ</h3>
-              <h5 class="img_title">Kvalitná a profesionálne odvedená montáž okien má zásadný vplyv na dokonalú funkciu okien. Zverte ju do rúk profesionálom. </h5>
-            </div>
+      <div class="col">
+        <div class="card mx-2">
+          <img src=".\obrazky\bmontaz.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">MONTÁŽ</h5>
+            <p class="card-text">Kvalitná a profesionálne odvedená montáž okien má zásadný vplyv na dokonalú funkciu okien. Zverte ju do rúk profesionálom.</p>
+          </div>
         </div>
       </div>
-         
-         
-         
-
-    </div>
   </section>
 
-  <section class="bg-light">
-    <h1 class="text-center py-5 ">Naše produkty</h1>
-    <div class="container p-3">
+  <section>
+    <h1><span>Naše produkty</span></h1>
+    <div class="container p-4">
       <div class="row">
         <div class="col-md-6 col-lg-4 border border-dark text-center p-5" id="prodHov">
-          <img src=".\icons\window1.png"  alt="">
+          <a href="produkty.html#plastOk">
+            <img src=".\icons\window1.png" alt=""></a>
           <h4>Plastové okná</h4>
           <p class="lead">Ideal 4000, Ideal 5000, Ideal 8000</p> 
-          <h5 ><a href="produkty.html#plastOk">zistiť viac</a></h5>
+            <a type="button" class="btn btn-outline-danger" href="produkty.html#plastOk">zistiť viac</a>
         </div>
         <div class="col-md-6 col-lg-4 border border-dark text-center p-5" id="prodHov">
-          <img src=".\icons\okno.png" alt="">
+          <a href="produkty.html#hlinikOk">
+            <img src=".\icons\okno.png" alt=""></a>
           <h4>Hliníkové okná</h4>
           <p class="lead">Imperial, Triline, Ecoline, Superline</p>
-          <h5><a href="produkty.html#hlinikOk">zistiť viac</a></h5>
+            <a type="button" class="btn btn-outline-danger" href="produkty.html#hlinikOk">zistiť viac</a>
         </div>
         <div class="col-md-6 col-lg-4 border border-dark text-center p-5" id="prodHov">
-          <img src=".\icons\door1.png" alt="">
+          <a href="produkty.html#plastDv">
+            <img src=".\icons\door1.png" alt=""></a>
           <h4>Plastové dvere</h4>
           <p class="lead">Ideal 4000, Ideal 7000, Aluplast HST</p>
-          <h5><a href="produkty.html#plastDv">zistiť viac</a></h5>
+             <a type="button" class="btn btn-outline-danger" href="produkty.html#plastDv">zistiť viac</a>
         </div>
+
         <div class="col-md-6 col-lg-4 border border-dark text-center p-5" id="prodHov">
-          <img src=".\icons\dvere.png" alt="">
+          <a href="produkty.html#hlinikDv">
+            <img src=".\icons\dvere.png" alt=""></a>
           <h4>Hliníkové dvere</h4>
           <p class="lead">Imperial, Triline, Ecoline, Superline</p>
-          <h5><a href="produkty.html#hlinikDv">zistiť viac</a></h5>
+            <a type="button" class="btn btn-outline-danger" href="produkty.html#hlinikDv">zistiť viac</a>
         </div>
         <div class="col-md-6 col-lg-4 border border-dark text-center p-5" id="prodHov">
-          <img src=".\icons\shutter.png" alt="">
+          <a href="produkty.html#intZal">
+            <img src=".\icons\shutter.png" alt=""></a>
           <h4>Interiérové žalúzie</h4>
           <p class="lead">Ponúkame široký sortiment interiérových žalúzií</p>
-          <h5><a href="produkty.html#intZal">zistiť viac</a></h5>
+            <a type="button" class="btn btn-outline-danger" href="produkty.html#intZal">zistiť viac</a>
         </div>
         <div class="col-md-6 col-lg-4 border border-dark text-center p-5" id="prodHov">
-          <img src=".\icons\other.png" alt="">
+          <a href="produkty.html#parSie">
+            <img src=".\icons\other.png" alt=""></a>
           <h4>Parapety, Sieťky</h4>
           <p class="lead">Dodávame parapety, sieťky proti hmyzu</p>
-          <h5><a href="produkty.html#parSie">zistiť viac</a></h5>
+          <a type="button" class="btn btn-outline-danger" href="produkty.html#parSie">zistiť viac</a>
         </div>
       </div>
     </div>
  
     
   </section>
+ 
   <footer class="footer py-3 ">
-    <div class="container">
+    <div class="container  text-center">
       <div class="row">
-        <div class="col-md-6 p-3 text-center">
+        <div class="col-md-6 p-3">
           <h3 class="p-2">Kontakt</h3>
           <p>ELOK, spol. s r.o.<br>Partizánska 1099 <br>017 01 Považská Bystrica</p>
         </div>
-        <div class="col-md-6 text-center ">
+        <div class="col-md-6">
           <div class="row p-3 d-flex align-items-baseline">
             <div class="col-md-2">
               <img src=".\icons\email.png" alt="">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 px-3" id="footer-text">
               <p><a href="mailto:elok@pegonet.sk">elok@pegonet.sk</a></p>
             </div>
           </div>
@@ -175,7 +174,7 @@
             <div class="col-md-2">
               <img src=".\icons\telefon.png" alt="">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7" id="footer-text">
               <p>+421 (0) 907 764 687<br>
               +421 (0) 918 221 506</p>
             </div>
