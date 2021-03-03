@@ -9,21 +9,21 @@
   <title>ELOK</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand"> 
-        <img src=".\obrazky\logom.png" width="190px" alt="">
+        <img src=".\obrazky\logo.png" width="190px" alt="">
         </a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
        </button>
        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
         <ul class="navbar-nav">
-          <li class="nav-item px-2">
+          <li class="nav-item">
             <a href="index.html" class="nav-link">O NÁS</a>
           </li>
-          <li class="nav-item dropdown px-2">
-            <a href="produkty.html" class="nav-link dropdown-toggle id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a href="produkty.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               PRODUKTY
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -35,10 +35,10 @@
               <li><a class="dropdown-item" href="produkty.html#parSie">Sieťky, parapety...</a></li>
             </ul>
           </li>
-          <li class="nav-item px-2">
+          <li class="nav-item">
             <a href="referencie.html" class="nav-link">REFERENCIE</a>
           </li>
-          <li class="nav-item px-2">
+          <li class="nav-item">
             <a href="kontakt.html" class="nav-link">KONTAKT</a>
           </li>
         </ul>
@@ -47,18 +47,18 @@
   </nav>
 
   <section class="container-fluid px-0">
-    <h1 class="text-center py-5 ">Napíšte nám</h1>
+    <h1 class="text-center py-2 "><span>Napíšte nám</span></h1>
     
      <div class="container" id="cntctBox">
         <div class="contact-box">
           <div class="left">
           </div>
           <div class="right">
-            <input type="text" class="field" placeholder="Meno a Priezvisko">
-            <input type="text" class="field" placeholder="Email">
+            <input type="text" class="field" placeholder="Meno a Priezvisko" required>
+            <input type="email" class="field" placeholder="Email" name="email"  required>
             <input type="text" class="field" placeholder="Telefón">
             <textarea placeholder="Správa" class="field"></textarea>
-            <button class="btn btn-primary ">Odoslať správu</button>
+            <button class="btn" type="submit" id="jsnBtn">Odoslať správu</button>
           </div>
         </div>
       </div>
