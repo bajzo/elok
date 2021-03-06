@@ -263,7 +263,11 @@ h4 {
   }
 }
 
-
+#techList {
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
 
 
 #contyFlu{
@@ -309,7 +313,7 @@ h4 {
 }
 
  #offerCont {
-  background-color: #e6e6e6;
+ background-color: #e6e6e6;
  padding-bottom: 5rem;
  padding-top: 3rem;
   
@@ -340,6 +344,10 @@ font-size: 1.4rem;
   }
 }
 
+#TxtCon {
+  max-width: 1000px;
+  
+}
 
 
 
@@ -460,14 +468,15 @@ font-size: 1.4rem;
         color:red;
     }
 
-    #jsnBtn:active {
-      background-color: inherit;
+    #morInf {
+      color:red;
     }
 
-    #jsnBtn:focus{
-        border: 2px solid red;
-        background-color: #fff;
+    .checkbox {
+      color:red;
     }
+
+ 
     
     @media screen and (max-width: 880px){
       .contact-box{
@@ -493,12 +502,6 @@ font-size: 1.4rem;
   
     }
 
-    #fixedbutton {
-      position: fixed;
-      bottom: 25px;
-      right: 15px; 
-      color: red;
-    }
 
 
 .btn {

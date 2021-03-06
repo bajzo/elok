@@ -27,12 +27,12 @@
               PRODUKTY
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="produkty.html#plastOk">Plastové okná</a></li>
-              <li><a class="dropdown-item" href="produkty.html#hlinikOk">Hliníkové okná</a></li>
-              <li><a class="dropdown-item" href="produkty.html#plastDv">Plastové dvere</a></li>
-              <li><a class="dropdown-item" href="produkty.html#hlinikDv">Hliníkové dvere</a></li>
-              <li><a class="dropdown-item" href="produkty.html#intZal">Interiérové žalúzie</a></li>
-              <li><a class="dropdown-item" href="produkty.html#parSie">Sieťky, parapety...</a></li>
+              <li><a class="dropdown-item" href="plastoveokna.html#plastOk">Plastové okná</a></li>
+              <li><a class="dropdown-item" href="hlinikoveokna.html#hlinikOk">Hliníkové okná</a></li>
+              <li><a class="dropdown-item" href="plastovedvere.html#plastDv">Plastové dvere</a></li>
+              <li><a class="dropdown-item" href="hlinikovedvere.html#hlinikDv">Hliníkové dvere</a></li>
+              <li><a class="dropdown-item" href="doplnky.html#intZal">Interiérové žalúzie</a></li>
+              <li><a class="dropdown-item" href="doplnky.html#parSie">Sieťky, parapety...</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -54,11 +54,19 @@
           <div class="left">
           </div>
           <div class="right">
-            <input type="text" class="field" placeholder="Meno a Priezvisko" required>
-            <input type="email" class="field" placeholder="Email" name="email"  required>
+            <input type="text" class="field" id="text" placeholder="Meno a Priezvisko" required>
+            <input type="email" class="field" id="email" placeholder="Email" name="email"  required>
             <input type="text" class="field" placeholder="Telefón">
             <textarea placeholder="Správa" class="field"></textarea>
-            <button class="btn" type="submit" id="jsnBtn">Odoslať správu</button>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required unchecked>
+              <label class="form-check-label" for="flexCheckChecked">
+                <p>
+                Súhlasím so spracovaním osobných údajov za účelom obchodného kontaktu <a id="morInf" href="udaje.html">(viac informácií)</a>
+               </p>
+              </label>
+            </div>
+            <button class="btn btn-danger" type="submit" id="jsnBtn">Odoslať správu</button>
           </div>
         </div>
       </div>
